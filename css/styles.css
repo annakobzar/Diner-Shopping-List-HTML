@@ -1,0 +1,141 @@
+:root {
+  --text-color: #eb7e7f;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/* Main Styles */
+body {
+  font: 22px "Trebuchet MS", Trebuchet, Arial, sans-serif;
+  color: #fff;
+  position: relative;
+}
+
+.container {
+  background: #3b3f45;
+  margin: 25px;
+  width: calc(100% - 50px);
+  height: calc(100% - 50px);
+  min-width: 350px;
+  position: absolute;
+}
+
+header {
+  background: #4a4f56;
+  height: 120px;
+  text-align: center;
+  padding: 31px 0;
+  margin-bottom: 40px;
+}
+
+h1 {
+  color: var(--text-color);
+  font-size: 28px;
+  font-weight: 700;
+}
+
+h1 + p {
+  color: var(--text-color);
+  font-size: 20px;
+}
+
+main {
+  margin-bottom: 40px;
+}
+
+form div:nth-child(odd) {
+  background: #88839e;
+}
+
+form div:nth-child(even) {
+  background: #7a7593;
+}
+
+form div {
+  width: 800px;
+  height: 65px;
+  margin: 0 auto;
+  /* padding-top: 18px; */
+  padding-left: 14px;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  cursor: pointer;
+}
+
+form div:hover {
+  background: #625e77;
+  border-top: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+}
+
+form div:active {
+  background-color: var(--text-color);
+}
+
+input:checked + label {
+  text-decoration: line-through;
+  color: #a3a0b5;
+}
+
+input:checked + label span {
+  text-decoration: line-through;
+  color: #a3a0b5;
+}
+
+label[for] span:before {
+  content: "(";
+}
+
+label[for] span:after {
+  content: ")";
+}
+
+span {
+  font-size: 16px;
+  color: #c8cbd6;
+}
+
+label {
+  cursor: pointer;
+  display: inline-block;
+  width: calc(100% - 27px);
+  height: 65px;
+  margin: 0;
+  padding: 18px;
+}
+
+footer {
+  background: #4a4f56;
+  color: var(--text-color);
+  width: 800px;
+  height: 75px;
+  margin: 0 auto;
+  padding: 26px;
+  text-align: center;
+}
